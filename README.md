@@ -31,9 +31,20 @@ alias api="api"
 
 #classes - 
 
-#Articles // Summary, title, content
-#Local Storage // Summary, title, content
+#ArticleManager // Holds array of articles
+#Article // Title, summary, text, picture, URL
+#Local Storage // Summary, title, text, picture, URL
 #Guardian API
+
+DATA TO FETCH - 
+
+Summarization 
+
+URL, title, text(summary)
+
+Article Extraction
+
+Article, image
 
 
 ```
@@ -78,6 +89,7 @@ app->interface: "Media queries in place to render layout for phone use"
 #To make my news reading more fun
 #---------------------------------------------#
 app->interface: "CSS Transitions between windows"
+
 ```
 
 ## Mockups
@@ -85,4 +97,8 @@ app->interface: "CSS Transitions between windows"
 ### Headlines page
 
 ![Headlines page mockup](/images/news-summary-project-headlines-page-mockup.png)
+
+### Article summary page
+
+![Article page mockup](/images/news-summary-project-article-page-mockup.png)
 
