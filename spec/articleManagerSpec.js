@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 function testArticleManagerIsCreated() {
   let articleManager = new ArticleManager();

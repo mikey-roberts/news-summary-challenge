@@ -34,7 +34,6 @@ alias api="api"
 #ArticleManager // Holds array of articles
 #Article // Title, summary, text, picture, URL
 #Local Storage // Summary, title, text, picture, URL
-#Guardian API
 
 DATA TO FETCH - 
 
