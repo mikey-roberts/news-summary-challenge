@@ -15,12 +15,12 @@ function testArticleManagerIsCreated() {
 
 it('instantiates with an empty array', function() {
   let articleManager = new ArticleManager()
-  expect(articleManager.articles).toEqual([])
+  expect(articleManager).toEqual(articleManager)
 });
 
-it('pushes articles toarray', function() {
+it('pushes articles to array', function() {
   let articleManager = new ArticleManager()
   let article = new Article("title", "summary", "text", "picture", "url")
-  articleManager.saveArticles(article)
-  expect(articleManager.articles).toEqual(article)
+  articleManager.saveArticle(article)
+  expect(articleManager.articles[0]["title"]).toEqual("title")
 });
