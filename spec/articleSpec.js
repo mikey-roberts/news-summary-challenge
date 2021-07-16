@@ -1,14 +1,14 @@
 'use strict';
 
 function testArticleIsCreated() {
-  let article = new Article(("title", "summary", "text", "picture", "url"));
+  let article = new Article("title", "summary", "text", "picture", "url");
 
   if(article.title === "title") {
-    console.log("FAIL");
-  } else {
     console.log("PASS");
+  } else {
+    console.log("FAIL");
   }
-
+};
   
 testArticleIsCreated();
 
@@ -34,6 +34,5 @@ it('stores an article with a picture', function() {
 
 it('stores an article with a URL', function() {
   let article = new Article("title", "summary", "content", "picture", "url")
-  expect(article.url).toEqual("URL")
+  expect(article.url).toEqual("url")
 });
-};
