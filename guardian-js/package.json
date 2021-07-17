@@ -1,0 +1,61 @@
+{
+  "_from": "guardian-js",
+  "_id": "guardian-js@4.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-nehSpDGECJBE0jYBRWUpQl59+thW5HwO39TtsA/JdIPAQejG/MEsxWZ0vWNkLoDpHQ68iDXPvvuvCSKfOE3AcA==",
+  "_location": "/guardian-js",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "guardian-js",
+    "name": "guardian-js",
+    "escapedName": "guardian-js",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/guardian-js/-/guardian-js-4.0.0.tgz",
+  "_shasum": "377d9d878069d3ec6119f4bde68428496811b890",
+  "_spec": "guardian-js",
+  "_where": "/Users/mikey-roberts/Documents/Repos/news-summary-challenge",
+  "author": {
+    "name": "Kalob Porter",
+    "email": "kalob@kalob.net",
+    "url": "http://kalob.net"
+  },
+  "bugs": {
+    "url": "https://github.com/PorterK/GuardianJSClient/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "request": "^2.88.0"
+  },
+  "deprecated": false,
+  "description": "A JavaScript lib for the Guardian's api",
+  "devDependencies": {
+    "expect": "^25.3.0",
+    "mocha": "^7.1.1",
+    "typescript": "^4.2.4"
+  },
+  "homepage": "https://github.com/PorterK/GuardianJSClient#readme",
+  "keywords": [
+    "Guardian",
+    "News"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "guardian-js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PorterK/GuardianJSClient.git"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "version": "4.0.0"
+}
