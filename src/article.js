@@ -10,4 +10,16 @@ class Article {
     this.url = url
   }
   
+
+  id() {
+  return this.id;
+  }
+
+  title() {
+  return this.title;
+  }
+
+  url() {
+  return this.url;
+  }
 }

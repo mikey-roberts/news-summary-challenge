@@ -2,10 +2,14 @@
 
 class ArticleManager {
   constructor() {
-  this.articles = [];
+  this.article = [];
   }
 
   saveArticle(obj) {
-  this.articles.push(obj);
+  this.article.push(obj);
+  }
+
+  displayArticle() {
+  return this.article;
   }
 }
