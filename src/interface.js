@@ -18,19 +18,32 @@ function getArticleTitle() {
        let article = new Article(newsArticles[i].id, newsArticles[i].webTitle, newsArticles[i].webUrl)
        articleManager.saveArticle(article); 
        }
-    }) 
+       displayHeadlines()
+    })
   })
-  displayHeadlines();
 } 
 
 getArticleTitle()
 
+
   function displayHeadlines() {
-    for(let i = 0; i < articleManager.length; i++) {
-    let newHeadline = document.createElement("h4");
-    newHeadline.classList.add("article-headline");
-    newHeadline.innerText = `${articleManager.article[i].id}`;
-    articleList.appendChild(newHeadline);
+    for(let i = 0; i < 10; i++) {
+    let newTitle = document.createElement("h2");
+    newTitle.classList.add("article-headline");
+    // Populates Article Title
+    newTitle.innerText = `${articleManager.article[i].title}`;
+    let newId = document.createElement("h4");
+    newId.classList.add("article-id");
+    // Populates Article ID
+    newId.innerText = `${articleManager.article[i].id}`;
+    let newUrl = document.createElement('a');
+    newUrl.classList.add("article-url");
+    // Populates Article Url
+    newUrl.setAttribute('href', articleManager.article[i].url);
+    newUrl.innerHTML = articleManager.article[i].url;
+    articleList.appendChild(newTitle);
+    articleList.appendChild(newId);
+    articleList.appendChild(newUrl);
     }
   }
 })
